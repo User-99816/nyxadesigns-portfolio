@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://user-99816.github.io/nyxadesigns-portfolio/</loc>
-    <priority>1.0</priority>
+    <loc>
+      https://user-99816.github.io/nyxadesigns-portfolio/
+    </loc>
   </url>
 
   <url>
-    <loc>https://user-99816.github.io/nyxadesigns-portfolio/about.html</loc>
+    <loc>
+      https://user-99816.github.io/nyxadesigns-portfolio/about.html
+    </loc>
   </url>
 
   <url>
-    <loc>https://user-99816.github.io/nyxadesigns-portfolio/services.html</loc>
+    <loc>
+      https://user-99816.github.io/nyxadesigns-portfolio/services.html
+    </loc>
   </url>
 
   <url>
-    <loc>https://user-99816.github.io/nyxadesigns-portfolio/projects.html</loc>
+    <loc>
+      https://user-99816.github.io/nyxadesigns-portfolio/projects.html
+    </loc>
   </url>
 
 </urlset>
