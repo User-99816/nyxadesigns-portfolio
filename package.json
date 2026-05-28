@@ -1,0 +1,9 @@
+{
+  "name": "nyxadesigns-portfolio",
+  "version": "1.0.0",
+  "description": "Premium cinematic portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  }
+}
