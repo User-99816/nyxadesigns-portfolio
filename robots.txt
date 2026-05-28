@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://user-99816.github.io/nyxadesigns-portfolio/sitemap.xml
