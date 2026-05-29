@@ -280,22 +280,88 @@
 <section class="home-projects">
   <div class="section-title"><h2>Featured Work</h2></div>
 
-  <div class="project-grid">
-    <div class="project-card">
-      <img src="assets/images/projects/neo-nairobi.png">
-      <h3>Neo Nairobi</h3>
-    </div>
+  <!-- FILTER BUTTONS -->
+<div class="project-filters">
 
-    <div class="project-card">
-      <img src="assets/images/projects/luxury-hotel.png">
-      <h3>Luxury Hotel Branding</h3>
-    </div>
+  <button class="filter-btn active" data-filter="all">
+    All
+  </button>
 
-    <div class="project-card">
-      <img src="assets/images/projects/barber-branding.png">
+  <button class="filter-btn" data-filter="branding">
+    Branding
+  </button>
+
+  <button class="filter-btn" data-filter="web">
+    Websites
+  </button>
+
+  <button class="filter-btn" data-filter="uiux">
+    UI/UX
+  </button>
+
+</div>
+
+<!-- PROJECT GRID -->
+<div class="project-grid">
+
+  <!-- PROJECT -->
+  <div class="project-card" data-category="branding">
+
+    <img src="assets/images/projects/barber-branding.png" alt="">
+
+    <div class="project-overlay">
+
       <h3>Barber Branding</h3>
+      <p>Luxury identity system</p>
+
     </div>
+
   </div>
+
+  <!-- PROJECT -->
+  <div class="project-card" data-category="web">
+
+    <img src="assets/images/projects/luxury-hotel.png" alt="">
+
+    <div class="project-overlay">
+
+      <h3>Luxury Hotel Website</h3>
+      <p>Modern premium web design</p>
+
+    </div>
+
+  </div>
+
+  <!-- PROJECT -->
+  <div class="project-card" data-category="uiux">
+
+    <img src="assets/images/projects/neo-nairobi.png" alt="">
+
+    <div class="project-overlay">
+
+      <h3>Neo Nairobi UI</h3>
+      <p>Cyberpunk UI/UX concept</p>
+
+    </div>
+
+  </div>
+
+  <!-- PROJECT -->
+  <div class="project-card" data-category="branding">
+
+    <img src="assets/images/projects/barber-branding.png" alt="">
+
+    <div class="project-overlay">
+
+      <h3>Modern Branding</h3>
+      <p>Creative identity concept</p>
+
+    </div>
+
+  </div>
+
+</div>
+
 </section>
 
 <!-- CASE STUDY -->
@@ -661,6 +727,39 @@ document.addEventListener("mouseleave",()=>{
 gsap.from(".hero-title",{y:40,opacity:0,duration:1});
 gsap.from(".hero-text",{y:30,opacity:0,duration:1,delay:0.2});
 gsap.from("#vcard",{x:50,opacity:0,duration:1,delay:0.3});
+</script>
+
+<script>
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    // ACTIVE BUTTON
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const filter = button.getAttribute("data-filter");
+
+    projectCards.forEach(card => {
+
+      if(filter === "all" || card.dataset.category === filter){
+
+        card.classList.remove("hide");
+
+      } else {
+
+        card.classList.add("hide");
+
+      }
+
+    });
+
+  });
+
+});
 </script>
 
 </body>
