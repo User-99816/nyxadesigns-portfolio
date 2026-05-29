@@ -1134,3 +1134,83 @@ footer{
 .contact-form select{
   color:#888;
 }
+
+/* CASE STUDY */
+.case-study{
+  padding:120px 8%;
+  position:relative;
+  z-index:2;
+}
+
+.case-wrapper{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:60px;
+  align-items:center;
+  margin-top:60px;
+}
+
+.case-image img{
+  width:100%;
+  border-radius:30px;
+  object-fit:cover;
+  box-shadow:0 0 40px rgba(0,0,0,0.4);
+}
+
+.case-badge{
+  display:inline-block;
+  padding:10px 20px;
+  background:rgba(0,240,255,0.1);
+  border:1px solid rgba(0,240,255,0.3);
+  color:#00f0ff;
+  border-radius:30px;
+  margin-bottom:20px;
+  font-size:0.9rem;
+}
+
+.case-content h3{
+  color:#fff;
+  font-size:3rem;
+  line-height:1.2;
+  margin-bottom:25px;
+}
+
+.case-content p{
+  color:#bbb;
+  line-height:1.9;
+  margin-bottom:30px;
+}
+
+.case-details{
+  display:grid;
+  gap:25px;
+  margin-bottom:35px;
+}
+
+.case-box{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:25px;
+  border-radius:20px;
+}
+
+.case-box h4{
+  color:#fff;
+  margin-bottom:12px;
+}
+
+.case-stack{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-bottom:35px;
+}
+
+.case-stack span{
+  padding:10px 18px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:30px;
+  color:#00f0ff;
+  font-size:0.9rem;
+}
