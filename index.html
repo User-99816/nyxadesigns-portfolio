@@ -319,35 +319,46 @@
   </div>
 
   <!-- PROJECT -->
-  <div class="project-card" data-category="web">
+  <div
+  class="project-card"
+  data-category="uiux"
+  data-title="Neo Nairobi"
+  data-desc="A futuristic cyberpunk African branding and UI/UX concept blending luxury visuals, immersive interfaces, neon aesthetics, and cinematic storytelling inspired by the future of Nairobi."
+>
 
-    <img src="assets/images/projects/luxury-hotel.png" alt="">
+  <img src="assets/images/projects/neo-nairobi.png" alt="Neo Nairobi">
 
-    <div class="project-overlay">
+  <div class="project-overlay">
 
-      <h3>Luxury Hotel Website</h3>
-      <p>Modern premium web design</p>
-
-    </div>
-
-  </div>
-
-  <!-- PROJECT -->
-  <div class="project-card" data-category="uiux">
-
-    <img src="assets/images/projects/neo-nairobi.png" alt="">
-
-    <div class="project-overlay">
-
-      <h3>Neo Nairobi UI</h3>
-      <p>Cyberpunk UI/UX concept</p>
-
-    </div>
+    <h3>Neo Nairobi</h3>
+    <p>Cyberpunk UI/UX concept</p>
 
   </div>
 
+</div>
+
   <!-- PROJECT -->
-  <div class="project-card" data-category="branding">
+  <div
+  class="project-card"
+  data-category="web"
+  data-title="Luxury Hotel Branding"
+  data-desc="A premium hotel branding and website experience designed with elegant visuals, luxury typography, cinematic layouts, and modern hospitality aesthetics for high-end hotel businesses."
+>
+
+  <img src="assets/images/projects/luxury-hotel.png" alt="Luxury Hotel Branding">
+
+  <div class="project-overlay">
+
+    <h3>Luxury Hotel Website</h3>
+    <p>Modern premium web design</p>
+
+  </div>
+
+</div>
+
+  <!-- PROJECT -->
+  <div class="project-card" data-category="branding"  data-title="Barber Branding"
+  data-desc="Luxury modern branding identity system for premium barber businesses.">
 
     <img src="assets/images/projects/barber-branding.png" alt="">
 
@@ -761,6 +772,46 @@ filterButtons.forEach(button => {
 
 });
 </script>
+
+<!-- PROJECT MODAL -->
+<div class="project-modal" id="projectModal">
+
+  <div class="modal-overlay"></div>
+
+  <div class="modal-content">
+
+    <!-- CLOSE -->
+    <span class="modal-close" id="modalClose">
+      &times;
+    </span>
+
+    <!-- IMAGE -->
+    <img
+      src=""
+      id="modalImage"
+      alt="Project Preview"
+    >
+
+    <!-- INFO -->
+    <div class="modal-info">
+
+      <h2 id="modalTitle">
+        Project Title
+      </h2>
+
+      <p id="modalDesc">
+        Project Description
+      </p>
+
+      <a href="projects.html" class="btn primary">
+        View Full Project
+      </a>
+
+    </div>
+
+  </div>
+
+</div> 
 
 </body>
 
