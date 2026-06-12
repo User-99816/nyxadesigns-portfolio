@@ -1397,18 +1397,18 @@ footer{
 }
 
 /* =========================
-   GLOBAL RESET
+   GLOBAL STYLES
 ========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
     background: #0f0f1a;
-    color: #fff;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -1461,107 +1461,152 @@ nav ul li a.active {
 }
 
 /* =========================
+   TOP BANNER (URGENCY)
+========================= */
+.top-banner {
+    background: #7c5cff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* =========================
    HERO
 ========================= */
-.hero {
+.shop-hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px;
     background: linear-gradient(135deg, #1a1a3a, #0f0f1a);
 }
 
-.hero h1 {
+.shop-hero h1 {
     font-size: 42px;
     margin-bottom: 10px;
 }
 
-.hero p {
+.shop-hero p {
     color: #aaa;
     max-width: 700px;
     margin: auto;
 }
 
 /* =========================
-   SHOP GRID
+   FILTER BUTTONS
 ========================= */
-.shop-section {
+.filters {
+    margin-top: 20px;
+}
+
+.filters button {
+    background: transparent;
+    border: 1px solid #7c5cff;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background: #7c5cff;
+}
+
+/* =========================
+   FEATURE STRIP
+========================= */
+.feature-strip {
+    background: #111127;
+    padding: 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    color: #ddd;
+}
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+.products-section {
     padding: 60px 0;
 }
 
-.shop-grid {
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 
 /* =========================
-   SHOP CARD
+   PRODUCT CARD
 ========================= */
-.shop-card {
+.product-card {
     background: #1a1a2e;
     padding: 20px;
     border-radius: 12px;
-    position: relative;
     transition: 0.3s;
+    position: relative;
 }
 
-.shop-card:hover {
+.product-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-.shop-card h3 {
+.product-card h3 {
     margin-bottom: 10px;
-    font-size: 18px;
 }
 
-.shop-card ul {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.shop-card ul li {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #ddd;
+.product-card p {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 /* =========================
-   BADGE
+   TAGS (BADGES)
 ========================= */
-.badge {
+.tag {
     position: absolute;
     top: 10px;
     right: 10px;
     background: #7c5cff;
-    color: #fff;
     padding: 5px 10px;
     font-size: 11px;
     border-radius: 20px;
 }
 
 /* =========================
-   DESCRIPTION
+   RATING
 ========================= */
-.desc {
+.rating {
+    color: gold;
     font-size: 13px;
-    color: #aaa;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 /* =========================
    PRICE
 ========================= */
 .price {
+    font-weight: bold;
     color: #7c5cff;
-    font-weight: bold;
-}
-
-.price-box {
-    margin-top: 10px;
-    padding: 8px;
-    background: rgba(124, 92, 255, 0.15);
-    border-radius: 6px;
-    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* =========================
@@ -1569,14 +1614,13 @@ nav ul li a.active {
 ========================= */
 .btn {
     display: inline-block;
-    margin-top: 15px;
     padding: 10px 15px;
     background: #7c5cff;
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    text-align: center;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 .btn:hover {
@@ -1584,58 +1628,60 @@ nav ul li a.active {
 }
 
 /* =========================
-   HOW IT WORKS
+   TRUST SECTION
 ========================= */
-.how-it-works {
+.trust-section {
     padding: 60px 20px;
     text-align: center;
     background: #111127;
 }
 
-.how-it-works h2 {
-    margin-bottom: 20px;
-}
-
-.steps div {
-    margin: 10px 0;
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
     color: #ddd;
 }
 
 /* =========================
-   TRUST SECTION
+   TESTIMONIALS
 ========================= */
-.trust {
+.testimonials {
     padding: 60px 20px;
     text-align: center;
 }
 
-.trust h2 {
-    margin-bottom: 20px;
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.trust ul {
-    list-style: none;
-}
-
-.trust li {
-    margin: 10px 0;
+.testimonial-card {
+    background: #1a1a2e;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 14px;
     color: #ddd;
 }
 
+.testimonial-card h4 {
+    margin-top: 10px;
+    color: #7c5cff;
+}
+
 /* =========================
-   CTA SECTION
+   CTA
 ========================= */
-.cta-section {
-    padding: 60px 20px;
+.cta {
     text-align: center;
+    padding: 60px 20px;
     background: linear-gradient(135deg, #1a1a3a, #0f0f1a);
 }
 
-.cta-section h2 {
-    margin-bottom: 10px;
-}
-
-.cta-section p {
+.cta p {
     color: #aaa;
     max-width: 600px;
     margin: auto;
@@ -1648,7 +1694,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: #12122a;
-    margin-top: 40px;
     color: #aaa;
 }
 
@@ -1658,7 +1703,6 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 10px;
         padding: 20px;
     }
 
@@ -1667,7 +1711,12 @@ footer {
         justify-content: center;
     }
 
-    .hero h1 {
+    .shop-hero h1 {
         font-size: 30px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
     }
 }
